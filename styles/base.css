@@ -1,0 +1,132 @@
+/* Color Definitions */
+:root {
+    --color-main: #102542;
+    --color-secondary: #f87060;
+    ;
+    --color-tertiary: #cdd7d6;
+    --color-quad: #b3a394;
+    --shadow: #e76f51;
+
+}
+
+html {
+    font-size: 16px;
+    margin: 10px;
+    padding: 100px;
+    background-color: #32161F;
+}
+
+body {
+    margin: 0em 1vw;
+    box-shadow: var(--shadow) .5em .5em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+
+header,
+footer {
+    background-color: var(--color-main);
+    padding: 0em 2em;
+    color: var(--color-tertiary);
+}
+
+header {
+
+    width: auto;
+    font-family: 'Caveat', cursive;
+
+}
+
+nav {
+    font-size: 24px;
+    text-align: center;
+    background-color: #b3a394;
+}
+
+nav a {
+    display: grid;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    line-height: 3em;
+    display: inline-block;
+    margin: auto;
+}
+
+header img {
+    margin-top: 15px;
+    width: auto;
+    height: auto;
+}
+
+main {
+    background-color: var(--color-tertiary);
+    min-height: 30vh;
+    padding: 1.5em 2em;
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+main h2 {
+    margin: 0em;
+    color: var(--color-main);
+    font-size: 1.5em;
+    line-height: 2em;
+    font-weight: 900;
+}
+
+main hr {
+    background-color: var(--color-main);
+    height: .5em;
+    border-radius: .5em;
+}
+
+main p,
+main ul {
+    font-size: 1em;
+    font-weight: 800;
+    color: var(--color-main);
+    list-style-type: none;
+    text-align: left;
+}
+
+main ul li a {
+    color: var(--color-main);
+    padding-left: .25em;
+}
+
+main ul li a:hover {
+    color: var(--color-secondary);
+    padding-left: .25em;
+}
+
+main section h3 {
+    background-color: #b3a394;
+}
+
+main section p {
+    text-align: center;
+}
+
+
+footer {
+    margin: 0em;
+    padding: 1em;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-weight: 900;
+    font-size: 10px;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+footer a {
+    color: var(--color-secondary);
+}
+
+footer a:hover {
+    color: white;
+}
