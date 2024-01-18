@@ -44,9 +44,14 @@ nav {
     background-color: #b3a394;
 }
 
+nav ul {
+    list-style-type: none;
+}
+
 nav a {
-    display: grid;
-    margin: 10px;
+    display: block;
+    text-align: center;
+    padding: 1rem;
 }
 
 h1 {
