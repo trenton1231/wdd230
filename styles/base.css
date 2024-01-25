@@ -2,7 +2,6 @@
 :root {
     --color-main: #102542;
     --color-secondary: #f87060;
-    ;
     --color-tertiary: #cdd7d6;
     --color-quad: #b3a394;
     --shadow: #e76f51;
@@ -49,9 +48,10 @@ nav ul {
 }
 
 nav a {
-    display: block;
+    display: none;
     text-align: center;
     padding: 1rem;
+    text-decoration: none;
 }
 
 h1 {
@@ -135,4 +135,38 @@ footer a {
 
 footer a:hover {
     color: white;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.open a {
+    display: block;
+}
+
+.active::before {
+    content: "📍";
+    /* just a wayfinding symbol for the user */
+}
+
+iframe {
+    border: 3px solid darkgray;
+    border-radius: 10px;
+    height: 50vh;
+    width: 100%;
 }

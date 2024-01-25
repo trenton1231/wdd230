@@ -19,4 +19,18 @@
         grid-column: span 2;
         text-align: left;
     }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation a {
+        display: flex;
+        flex: 1 1 100%;
+    }
+
+    iframe {
+        grid-column: span 2;
+    }
 }
