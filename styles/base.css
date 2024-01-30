@@ -74,6 +74,8 @@ main {
     font-family: 'Indie Flower', cursive;
     letter-spacing: 1px;
     text-align: center;
+    row-gap: 10px;
+    column-gap: 20px;
 }
 
 main h2 {
