@@ -109,6 +109,7 @@ nav ul li a {
 
 .ham::before {
     content: "☰";
+    color: var(--color-main)
 }
 
 .boxes {
@@ -138,13 +139,11 @@ nav ul li a {
     border: 5px outset var(--color-secondary);
     padding: 0.75rem;
     text-decoration: none;
-    color: black;
-    font-weight: 700;
+    color: var(--color-main) font-weight: 700;
 }
 
 .navigation a:hover {
-    color: var(--color-main);
-    background-color: var(--shadow);
+    background-color: var(--color-quad);
 }
 
 .responsive li {

@@ -104,9 +104,4 @@
         display: flex;
         flex: 1 1 100%;
     }
-
-    #menu {
-        display: none;
-        /* hide hamburger button */
-    }
 }
