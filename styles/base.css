@@ -34,7 +34,43 @@ header {
     width: auto;
     font-family: 'Caveat', cursive;
     text-align: center;
+    position: relative;
 
+}
+
+.hero {
+    margin: 10px auto;
+    max-width: 960px;
+    grid-column: span 2;
+    position: relative;
+
+}
+
+.hero img {
+    height: auto;
+    width: 100%;
+    max-width: 960px;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+
+.herolabel {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: radial-gradient(#fff, #4D5B97);
+    border: 1px solid rgba(0, 0, 0, .75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+}
+
+.herolabel p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 nav {
