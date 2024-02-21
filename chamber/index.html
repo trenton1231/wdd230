@@ -25,6 +25,7 @@
         </picture>
         <section class="headings">
             <h1>Queen Creek</h1>
+
             <div class="iconH4">
 
                 Chamber of Commerce
@@ -53,10 +54,27 @@
     </nav>
     <main>
         <h1>Queen Creek, AZ</h1>
-        <div class="boxes">Hero Image</div>
+        <div class="hero">
+            <picture>
+                <source srcset="images/wdd230-orgsmall.jpg" media="(max-width: 33.5em)">
+                <source srcset="images/wdd230-orgmedium.jpg" media="(max-width: 57.5em)">
+                <img src="images/wdd230-org.jpg" class="Image" alt="Random">
+            </picture>
+
+            <div class="herolabel">
+                <p>Large</p>
+            </div>
+        </div>
         <div class="boxes">Call to Action</div>
         <div class="boxes">Current Events</div>
-        <div class="boxes">Weather</div>
+        <section class="boxes">
+            <h2>Weather Summary</h2>
+            <p>Currently: <span id="current">Sunny</span></p>
+            <p>High: <span id="high">40</span>&#8457;</p>
+            <p>Wind Chill: <span id="windChill"><br>0</span>&#8457;</p>
+            <p>Humidity: <span id="humid">69%</span></p>
+            <p>Wind Speed: <span id="speed">5</span>mph</p>
+        </section>
         <div class="boxes">Spotlights</div>
     </main>
     <footer>
@@ -71,6 +89,7 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/response.js"></script>
+    <script src="scripts/windchill.js"></script>
 
 </body>
 

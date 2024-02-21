@@ -27,6 +27,40 @@ h5 {
     padding: .5em;
 }
 
+.hero {
+    margin: 10px auto;
+    position: relative;
+    grid-column: span 2;
+}
+
+.hero img {
+    height: auto;
+    width: 100%;
+    max-width: 960px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.herolabel {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    flex-wrap: wrap;
+    background: radial-gradient(var(--color-secondary), var(--color-tertiary));
+    color: var(--color-main);
+    border: 1px solid var(--color-secondary);
+    padding: 1.5rem;
+    box-shadow: 0 0 30px var(--shadow);
+    opacity: .7;
+}
+
+.herolabel p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
 header {
     background-color: var(--color-secondary);
     border: 5px outset var(--color-secondary);
@@ -139,7 +173,8 @@ nav ul li a {
     border: 5px outset var(--color-secondary);
     padding: 0.75rem;
     text-decoration: none;
-    color: var(--color-main) font-weight: 700;
+    color: var(--color-main);
+    font-weight: 700;
 }
 
 .navigation a:hover {
