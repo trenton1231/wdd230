@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="stylesheet" href="styles/form.css">
     <link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Sansita+Swashed:wght@300&display=swap"
         rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
@@ -53,29 +54,45 @@
         </ul>
     </nav>
     <main>
-        <h1>Queen Creek, AZ</h1>
-        <div class="hero">
-            <picture>
-                <source srcset="images/wdd230-orgsmall.jpg" media="(max-width: 33.5em)">
-                <source srcset="images/wdd230-orgmedium.jpg" media="(max-width: 57.5em)">
-                <img src="images/wdd230-org.jpg" class="Image" alt="Random">
-            </picture>
+        <div id="formmessage"></div>
+        <h1>Contact Us</h1>
+        <form method="get">
+            <p class="smaller">*️⃣ Indicates a required field</p>
 
-            <div class="herolabel">
-                <p>Large</p>
-            </div>
-        </div>
-        <div class="boxes">Call to Action</div>
-        <div class="boxes">Current Events</div>
-        <section class="boxes">
-            <h2>Weather Summary</h2>
-            <p>Currently: <span id="current">Sunny</span></p>
-            <p>High: <span id="high">40</span>&#8457;</p>
-            <p>Wind Chill: <span id="windChill"><br>0</span>&#8457;</p>
-            <p>Humidity: <span id="humid">69%</span></p>
-            <p>Wind Speed: <span id="speed">5</span>mph</p>
-        </section>
-        <div class="boxes">Spotlights</div>
+            <label for="fullname" class="req">Name</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Please enter your full name">
+            <label for="email" class="req">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Please use your school email address"
+                title="A valid byui.edu email address" pattern="a-zA-Z0-9.\-]+@byui.edu" required>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+            <label for="keyphrase" class="req">Your Key Phrase</label>
+            <input type="text" id="keyphrase" name="keyphrase" pattern="[a-zA-Z0-9]{8,}"
+                placeholder="At least eight characters long. Can include numbers">
+            <label for="keyphrase2" class="req">Re-enter Your Key Phrase</label>
+            <input type="text" id="keyphrase2" name="keyphrase2">
+
+            <label for="comments" class="req">Your Message</label>
+            <textarea id="comments" name="comments" required></textarea>
+            <button id="btnSubmit" type="submit">Send Message</button>
+            <input type="hidden" value="43aster">
+        </form>
+        <label for="r">Please rate us!!</label>
+        <div id="rangevalue">0</div>
+        <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+        <datalist id="rangevalues">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </datalist>
     </main>
     <footer>
         <p>
@@ -90,7 +107,8 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/response.js"></script>
     <script src="scripts/windchill.js"></script>
-
+    <script src="scripts/form.js"></script>
+    <script src="scripts/rate.js"></script>
 </body>
 
 </html>

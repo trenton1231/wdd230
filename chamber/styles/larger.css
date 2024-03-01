@@ -8,10 +8,6 @@
 
     }
 
-    h2 {
-        color: steelblue;
-    }
-
     header img {
         width: 100px;
     }
@@ -103,5 +99,37 @@
     .boxes {
         display: flex;
         flex: 1 1 100%;
+    }
+
+
+
+    .gridme {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+
+
+    .events {
+        grid-column: 1;
+        grid-row: 1;
+        margin-left: 125px;
+        width: 250px;
+        height: 350px;
+    }
+
+    .population {
+        grid-column: 1;
+        grid-row: 2;
+        margin-left: 125px;
+    }
+
+    .attractions {
+        grid-column: 1;
+        grid-row: 3;
+        margin-left: 125px;
+        margin-top: auto;
+        margin-top: -100px;
     }
 }

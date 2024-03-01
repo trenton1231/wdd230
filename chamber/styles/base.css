@@ -27,6 +27,10 @@ h5 {
     padding: .5em;
 }
 
+h2 {
+    position: relative;
+}
+
 .hero {
     margin: 10px auto;
     position: relative;
@@ -196,4 +200,89 @@ main {
     padding: 15px;
     margin: 0 auto;
     text-align: center;
+}
+
+.population {
+    width: 250px;
+    height: 250px;
+    background-color: var(--color-main);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 3px solid var(--shadow)
+}
+
+main h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: var(--color-tertiary)
+}
+
+div {
+    display: block;
+}
+
+.events {
+    margin: 80px;
+    width: 250px;
+    height: 350px;
+    background-color: var(--color-main);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 3px solid var(--shadow);
+    align-self: center;
+}
+
+
+
+.gridme {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+.attractions {
+    margin: 80px;
+    width: 250px;
+    height: 450px;
+    background-color: var(--color-main);
+    text-align: center;
+    border: 3px solid var(--shadow);
+}
+
+.pic1,
+.pic2,
+.pic3,
+.pic4,
+.pic5,
+.pic6 {
+    width: auto;
+    height: auto;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+}
+
+div p {
+    color: var(--color-quad);
+    background-color: var(--color-main)
+}
+
+#visit {
+    text-align: center;
+    background-color: var(--color-main);
+    margin: 80px;
+    width: 250px;
+    height: 50px;
+    border: 3px solid var(--shadow);
+    font-size: larger;
 }
