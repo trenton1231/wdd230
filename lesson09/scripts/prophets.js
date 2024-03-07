@@ -1,12 +1,13 @@
-const requestURL = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json.';
+const requestURL = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json';
 const cards = document.querySelector('#cards');
 
-async function getProphetData(url) {
-    const response = await fetch(url);
+async function getProphetData() {
+    const response = await fetch(requestURL);
     const data = await response.json();
     //console.table(data.prophets);
     displayProphets(data.prophets); // note that we reference the prophets array of the JSON data object, not just the object
 }
+
 
 getProphetData();
 
@@ -19,6 +20,7 @@ const displayProphets = (prophets) => {
 
         // Build the h2 content out to show the prophet's full name
         fullName.textContent = `${prophet.name} ${prophet.lastname}`; // fill in the blank
+
         // Build the image portrait by setting all the relevant attributes
         portrait.setAttribute('src', prophet.imageurl);
         portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`); // fill in the blank
