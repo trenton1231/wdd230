@@ -1,44 +1,24 @@
 {
     "wardInformation": {
-        "familyName": "Smith",
-        "moveInDate": "2022-03-15",
-        "numberOfPeople": 7,
+        "familyName": "Southard",
+        "moveInDate": "2020-02-01",
+        "numberOfPeople": 3,
         "visitedByBishopric": true,
         "familyMembers": [
             {
-                "name": "John Smith",
+                "name": "Trenton Southard",
                 "gender": "Male",
-                "birthdate": "1985-05-20"
+                "birthdate": "1996-10-01"
             },
             {
-                "name": "Jane Smith",
+                "name": "Susan Southard",
                 "gender": "Female",
-                "birthdate": "1988-11-12"
+                "birthdate": "1973-08-28"
             },
             {
-                "name": "David Smith",
+                "name": "Jeffrey Southard",
                 "gender": "Male",
-                "birthdate": "2010-02-03"
-            },
-            {
-                "name": "Emily Smith",
-                "gender": "Female",
-                "birthdate": "2012-08-27"
-            },
-            {
-                "name": "Michael Smith",
-                "gender": "Male",
-                "birthdate": "2015-04-10"
-            },
-            {
-                "name": "Sophia Smith",
-                "gender": "Female",
-                "birthdate": "2018-09-18"
-            },
-            {
-                "name": "Elijah Smith",
-                "gender": "Male",
-                "birthdate": "2020-12-05"
+                "birthdate": "1974-09-01"
             }
         ]
     }
