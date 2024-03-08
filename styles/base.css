@@ -208,3 +208,12 @@ iframe {
     height: 50vh;
     width: 100%;
 }
+
+#cards {
+    display: block;
+    text-align: left;
+    border: 2px solid blue;
+    box-sizing: border-box;
+    border-radius: 1em/1em;
+
+}
