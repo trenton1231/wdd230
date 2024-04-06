@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scoots Rentals - Final for WDD230 | Trenton Southard">
+    <meta name="author" content="Trenton Southard" />
+    <title>Trenton Southard - WDD 230 - Scoots Rental</title>
+    <link rel="icon" href="images/favicon (1).ico">
+    <meta property="og:title" content="Trenton Southard - WDD 230 - Scoots Rental" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://trenton1231.github.io/wdd230/final/" />
+    <link rel="icon" href="images/scootLogo.jpeg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=East+Sea+Dokdo&family=Langar&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+
+<body>
+
+
+    <header>
+        <a href="#"><img src="images/scootLogo.jpeg" alt="scoots logo"></a>
+
+        <div class="headings">
+            <div class="s"> Vehículos para tu disfrute | Vehicles for your enjoyment
+            </div>
+        </div>
+    </header>
+
+    <nav class="clearfix">
+
+        <ul class="navigation">
+            <li><a class="ham" href="#"> &#9776; Menu </a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="hero">
+            <a href="reservations.html">
+                <h1 class="signature1"> Reserve your <br>ride today! </h1>
+            </a>
+            <figure>
+
+                <img src="images/beach.jpeg" alt="scooters on the beach." />
+
+            </figure>
+
+        </div>
+
+
+        <section class="clima">
+            <h2>Did you know???</h2>
+            <p>There are amazing beaches everywhere! Especially on the west side</p>
+        </section>
+
+        <div class="container">
+            <h3>Are you ready for Cozumel??</h3>
+            <br>
+
+
+
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/d/u/0/edit?mid=1kHXm7z2C6LpHLQ_tIHzAeGztZGyme1g&usp=sharing"></iframe>
+            </div>
+        </div>
+
+        <div class="container">
+            <h4 class="contactus">Contact Us!</h4>
+
+            <div class="reserveform">
+                <form id="my-form" action="thanks.html" method="get">
+
+
+                    <div class="form-box">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="text" placeholder="First Last" required pattern="[A-Za-z ]+"
+                            minlength="5">
+                    </div>
+
+
+                    <div class="form-box">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="user@email.com">
+                    </div>
+
+
+                    <div class="form-box">
+                        <label for="comments1">Additonal Comments:</label>
+                        <textarea id="comments1" name="comments" rows="4">Enter comments here!
+                </textarea>
+
+                    </div>
+
+
+                    <div class="form-box" id="submitform">
+                        <input type="submit" name="btnSend" id="btnSend" form="my-form" value="SUBMIT">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="container">
+
+            <div class="page">
+
+                <div class="info">
+                    <img src="images/playadecozumel.jpeg" alt="Playa del Carmen-Cozumel Ferry dock" class="map">
+                    <h5>Scoots en Playa del Carmen-Cozumel</h5>
+
+                    <ul class="contact">
+                        <li>77400 Playa del Carmen </li>
+                        <li>Q.R, Mexico </li>
+                        <li>+52 998 293 9092 &nbsp;&nbsp; &#9742;</li>
+                    </ul>
+                    <div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="page">
+
+                <div class="info">
+                    <img src="images/maya.jpeg" alt="Terminal Puerta Maya" class="map">
+                    <h5>Scoots en Terminal Puerta Maya.</h5>
+
+
+                    <ul class="contact">
+                        <li>77600 Cozumel</li>
+                        <li>QROO, Mexico </li>
+                        <li>+52 987 869 1984 &nbsp;&nbsp; &#9742;</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+
+            <a href="https://www.facebook.com">
+                <img src="images/facebook.jpeg" alt="facebook icon" class="social"></a>
+            <a href="https://www.youtube.com">
+                <img src="images/youtube.jpeg" alt="youtube icon" class="social"></a>
+            <a href="https://www.twitter.com">
+                <img src="images/twitter.jpeg" alt="instagram icon" class="social"></a>
+        </div>
+
+    </main>
+    <footer>
+        <p>
+            &#169;<span id="getYear"></span> | Trenton Southard | Arizona, USA
+        </p>
+
+    </footer>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/response.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+
+</html>
